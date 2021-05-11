@@ -1,6 +1,6 @@
 <script lang="ts">
 async function request(method: "POST" | "GET" | "PUT") {
-	const data = await fetch("http://localhost:3000/endpoint", {
+	const data = await fetch("/endpoint", {
 		method
 	});
 	const json = await data.json();
